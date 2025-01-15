@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../components/head.ejs'); %>
+    <script src="/js/superhero.js"></script>
+    <link rel="stylesheet" href="/css/superhero.css">
+    <title data-fill="`${r.data.name} | Superhero Society`">Superhero Society</title>
+</head>
+<body>
+    <%- include('../components/header.ejs'); %>
+    <main>
+        <h1 data-fill="r.data.name"></h1>
+
+        <div id="infoGrid">
+            
+
+            <div id="appearance">
+                <h3>Appearance</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Race</th>
+                            <td data-fill="r.data.appearance.race"></td>
+                        </tr>
+                        <tr>
+                            <th>Gender</th>
+                            <td data-fill="r.data.appearance.gender"></td>
+                        </tr>
+                        <tr>
+                            <th>Height</th>
+                            <td data-fill="`${r.data.appearance.height[1]} / ${r.data.appearance.height[0]}`"></td>
+                        </tr>
+                        <tr>
+                            <th>Weight</th>
+                            <td data-fill="`${r.data.appearance.weight[1]} / ${r.data.appearance.weight[0]}`"></td>
+                        </tr>
+                        <tr>
+                            <th>Eye Colour</th>
+                            <td data-fill="r.data.appearance['eye-color']"></td>
+                        </tr>
+                        <tr>
+                            <th>Hair Colour</th>
+                            <td data-fill="r.data.appearance['hair-color']"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div id="powerstats">
+                <h3>Power Stats</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Power</th>
+                            <td data-fill="r.data.powerstats.power"></td>
+                        </tr>
+                        <tr>
+                            <th>Combat</th>
+                            <td data-fill="r.data.powerstats.combat"></td>
+                        </tr>
+                        <tr>
+                            <th>Speed</th>
+                            <td data-fill="r.data.powerstats.speed"></td>
+                        </tr>
+                        <tr>
+                            <th>Strength</th>
+                            <td data-fill="r.data.powerstats.strength"></td>
+                        </tr>
+                        <tr>
+                            <th>Durability</th>
+                            <td data-fill="r.data.powerstats.durability"></td>
+                        </tr>
+                        <tr>
+                            <th>Intelligence</th>
+                            <td data-fill="r.data.powerstats.intelligence"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div id="img">
+                <img data-fill data-fill-src="r.data.image.url" alt="Image of Superhero">
+            </div>
+
+            <div id="bio">
+                <h3>Biography</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Full Name</th>
+                            <td data-fill="r.data.biography['full-name']"></td>
+                        </tr>
+                        <tr>
+                            <th>Aliases</th>
+                            <td data-fill="r.data.biography.aliases.join(', ')"></td>
+                        </tr>
+                        <tr>
+                            <th>Alter Egos</th>
+                            <td data-fill="r.data.biography['alter-egos']"></td>
+                        </tr>
+                        <tr>
+                            <th>Occupation</th>
+                            <td data-fill="r.data.work.occupation"></td>
+                        </tr>
+                        <tr>
+                            <th>Base</th>
+                            <td data-fill="r.data.work.base"></td>
+                        </tr>
+                        <tr>
+                            <th>Place of Birth</th>
+                            <td data-fill="r.data.biography['place-of-birth']"></td>
+                        </tr>
+                        <tr>
+                            <th>Publisher</th>
+                            <td data-fill="r.data.biography.publisher"></td>
+                        </tr>
+                        <tr>
+                            <th>First Appearance</th>
+                            <td data-fill="r.data.biography['first-appearance']"></td>
+                        </tr>
+                        <tr>
+                            <th>Group Affiliations</th>
+                            <td data-fill="r.data.connections['group-affiliation']"></td>
+                        </tr>
+                        <tr>
+                            <th>Relatives</th>
+                            <td data-fill="r.data.connections.relatives"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+        
+    </main>
+</body>
+</html>

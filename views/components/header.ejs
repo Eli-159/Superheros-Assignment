@@ -1,0 +1,31 @@
+<header>
+    <div id="headerContents">
+        <div class="headerLogo">
+        <img src="/images/logo.png" alt="Superheroes Society Logo">
+        <div class="logoText">
+            <p>Superheroes Society</p>
+        </div>
+        </div>
+        <nav>
+        <div id="menuToggle">
+            <input type="checkbox" id="hamburgerCheckbox">
+            <div id="overlay"></div>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+
+            <ul id="menu">
+            <% if(std.user.loggedIn) {%>
+                <li><a href="/member/home" class="<%- std.request.url=='/member/home' ? 'active' : '' %>">Home</a></li>
+                <li><a href="/member/superheroes/search" class="<%- std.request.url=='/member/superheroes/search' ? 'active' : '' %>">Search Superheroes</a></li>
+                <li><a href="/api/auth/logout">Logout</a></li>
+            <% } else { %>
+                <li><a href="/home" class="<%- std.request.url=='/home' ? 'active' : '' %>">Home</a></li>
+                <li><a href="/auth/login" class="<%- std.request.url=='/auth/login' ? 'active' : '' %>">Login</a></li>
+                <li><a href="/auth/register" class="<%- std.request.url=='/auth/register' ? 'active' : '' %>">Register</a></li>
+            <% } %>
+            </ul>
+        </div>
+        </nav>
+    </div>
+</header>

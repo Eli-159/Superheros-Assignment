@@ -1,0 +1,9 @@
+[
+    {"id": 1, "superheroId": 1, "userId": 1, "message": "Hi Guys!"},
+    {"id": 2, "superheroId": 1, "userId": 2, "message": "Oh hey there man!"},
+    {"id": 3, "superheroId": 1, "userId": 1, "message": "How are you?"},
+    {"id": 4, "superheroId": 1, "userId": 2, "message": "Yeah good thanks"},
+    {"id": 5, "superheroId": 2, "userId": 3, "message": "Am I the only one that thinks Abe Sapien is the coolest superhero ever?!?"},
+    {"id": 6, "superheroId": 2, "userId": 1, "message": "Oh he totally is!"},
+    {"id": 7, "superheroId": 2, "userId": 2, "message": "What? Are you guys crazy? A-Bomb for the win!!!"}
+]

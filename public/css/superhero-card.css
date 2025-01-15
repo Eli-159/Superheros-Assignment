@@ -1,0 +1,75 @@
+.cardSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    margin: 20px auto 50px auto;
+    width: fit-content;
+}
+
+.superheroCard {
+    display: block;
+    background-color: transparent;
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.superheroCardInner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.superheroCard:hover .superheroCardInner {
+    transform: rotateY(180deg);
+}
+  
+.superheroCard .cardFront, .superheroCard .cardBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.superheroCard .cardFront {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.superheroCard .cardFront .superheroImg {
+    width: 100%;
+    height: 75%;
+    background-size: cover;
+}
+
+.superheroCard .cardBack {
+    background-color: var(--dark-color);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.superheroCard .cardBack h3 {
+    font-size: 24px;
+    color: var(--lighter-color);
+}
+
+.superheroCard .cardBack table {
+    width: fit-content;
+    margin: auto;
+}
+
+.superheroCard .cardBack table th {
+    text-align: center;
+    padding: 4px;
+}
+
+.superheroCard .cardBack table td {
+    text-align: left;
+    padding: 4px;
+}

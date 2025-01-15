@@ -1,0 +1,46 @@
+<div class="superheroCardInner">
+    <div class="cardFront">
+        <div class="superheroImg" data-loop-fill data-loop-fill-style="`background-image: url(${r.data[i].image.url});`"></div>
+        <h3 data-loop-fill="r.data[i].name"></h3>
+        <p data-loop-fill="r.data[i].biography.publisher"></p>
+    </div>
+    <div class="cardBack">
+        <h3 data-loop-fill="r.data[i].name"></h3>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Height</th>
+                    <td data-loop-fill="r.data[i].appearance.height[1]"></td>
+                </tr>
+                <tr>
+                    <th>Weight</th>
+                    <td data-loop-fill="r.data[i].appearance.weight[1]"></td>
+                </tr>
+                <tr>
+                    <th>Power</th>
+                    <td data-loop-fill="r.data[i].powerstats.power"></td>
+                </tr>
+                <tr>
+                    <th>Combat</th>
+                    <td data-loop-fill="r.data[i].powerstats.combat"></td>
+                </tr>
+                <tr>
+                    <th>Speed</th>
+                    <td data-loop-fill="r.data[i].powerstats.speed"></td>
+                </tr>
+                <tr>
+                    <th>Strength</th>
+                    <td data-loop-fill="r.data[i].powerstats.strength"></td>
+                </tr>
+                <tr>
+                    <th>Durability</th>
+                    <td data-loop-fill="r.data[i].powerstats.durability"></td>
+                </tr>
+                <tr>
+                    <th>Intelligence</th>
+                    <td data-loop-fill="r.data[i].powerstats.intelligence"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

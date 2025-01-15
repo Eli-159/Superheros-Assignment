@@ -1,0 +1,30 @@
+{
+  "name": "superheros",
+  "version": "1.0.0",
+  "description": "Digital Soultions IA3 for CSHS 2023",
+  "main": "app.js",
+  "author": "Eli Gearing <egear18@eq.edu.au>",
+  "license": "ISC",
+  "scripts": {
+    "build-database": "node data/build-database.js",
+    "test": "node_modules/.bin/nodemon app.js",
+    "run": "node app.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.1",
+    "path": "^0.12.7",
+    "sequelize": "^6.32.1",
+    "sequelize-cli": "^6.6.1",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

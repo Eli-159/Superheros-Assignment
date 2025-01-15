@@ -1,0 +1,6 @@
+[
+    {"id": 1, "firstName": "1", "lastName": "Test User", "email": "1.test.user@example.com", "password": "Password.1", "joinDate": "1970-01-01"},
+    {"id": 2, "firstName": "2", "lastName": "Test User", "email": "2.test.user@example.com", "password": "Password.2", "joinDate": "1970-01-01"},
+    {"id": 3, "firstName": "3", "lastName": "Test User", "email": "3.test.user@example.com", "password": "Password.3", "joinDate": "1970-01-01"},
+    {"id": 4, "firstName": "Eli", "lastName": "Gearing", "email": "egear18@eq.edu.au", "password": "Password.4", "joinDate": "2023-07-15"}
+]

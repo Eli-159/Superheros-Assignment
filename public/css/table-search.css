@@ -1,0 +1,13 @@
+.searchbar {
+    float: right;
+    margin: 23px 37px 0 0;
+}
+
+main .contentWrapper {
+    min-width: 80%;
+    max-width: 80%;
+}
+
+.dataTable {
+    min-width: 100%;
+}

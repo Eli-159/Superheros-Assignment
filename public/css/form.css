@@ -1,0 +1,72 @@
+label.inline {
+    display: inline;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+label.block {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+label.inline + input.text label.inline + textarea.text {
+    margin-bottom: 15px;
+}
+
+input.text, input.searchbar, textarea.text, select.text {
+    width: 200px;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    padding: 3px 5px;
+    outline: none;
+    font: inherit;
+}
+
+textarea.text {
+    width: min(60vw, 500px);
+}
+
+input.text:focus, input.searchbar:focus {
+    outline: 1px solid var(--dark-color);
+}
+
+input.searchbar {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+input.searchbar::after {
+    content: "&#65038;";
+    display: block;
+}
+
+
+.btn {
+    display: inline-block;
+    background-color: var(--lighter-color);
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+.btn:hover, .btn:focus {
+    border: 3px solid var(--dark-color);
+    border-spacing: 1px;
+    font-weight: bolder;
+    color: var(--dark-color);
+    padding: 4px 9px;
+}
+
+.btn + .btn {
+    float: right;
+    margin-right: 25px;
+}
