@@ -7,8 +7,7 @@
   "license": "ISC",
   "scripts": {
     "build-database": "node data/build-database.js",
-    "test": "node_modules/.bin/nodemon app.js",
-    "run": "node app.js"
+    "test": "node_modules/.bin/nodemon app.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
